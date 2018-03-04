@@ -10,6 +10,11 @@ sudo apt-get install tlp -y
 touch ~/.xinitrc
 echo "exec i3" > ~/.xinitrc
 
+#setup dotfiles
+cd ~/
+git clone https://github.com/0x4141414141/dotfiles
+chmod +x /dotfilges/makesymlinks.sh
+./dotfiles/makesymlinks.sh
 #check for secureboot
 #print dist and release
 #download and install dotfiles
